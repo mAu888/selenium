@@ -775,7 +775,7 @@ bot.dom.getOverflowState = function(elem, opt_region) {
       if (treatAsFixedPosition) {
         var docScroll = getScroll(container);
         if ((region.left >= htmlElem.scrollWidth - docScroll.x) ||
-            (region.right >= htmlElem.scrollHeight - docScroll.y)) {
+            (region.top >= htmlElem.scrollHeight - docScroll.y)) {
           return bot.dom.OverflowState.HIDDEN;
         }
       }
